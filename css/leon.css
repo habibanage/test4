@@ -1,0 +1,100 @@
+
+
+p{
+    font-family: 'Caveat', cursive;
+    font-size: 20px;
+}
+h1,h2{
+    font-family: 'Acme', sans-serif;
+}
+
+.section-bg{
+    background-image: linear-gradient(to left ,rgb(80, 75, 75) ,rgb(0, 0, 0) 50%);
+}
+
+.heading h1{
+    position: relative;
+}
+.heading h1::after{
+content: "";
+width: 50%;
+height: 3px;
+background-image: linear-gradient(to right,rgb(255, 108, 9) ,rgb(211, 92, 12));
+border-radius: 50%;
+position: absolute;
+bottom: 0;
+left: 50%;
+transform: translateX(-50%);
+}
+
+
+/* h */
+header .navbar{
+    background-image: linear-gradient(to left  (240, 224, 224),rgba(0, 0, 0, 0.795) 50%);
+    }
+    header .navbar .navbar-brand img{
+        width: 100px;
+    }
+    header .navbar .nav-link{
+        font-family: 'Acme', sans-serif;
+        color: rgb(255, 149, 10);
+        position: relative;
+    
+    }
+    header .navbar .nav-link::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 4px;
+        width: 0;
+        height: 1px;
+        
+    }
+    header .navbar .nav-link:hover.nav-link::after{
+        width: 100%;
+    }
+/* s */
+.carousel-inner .carousel-item{
+    height: 100vh;
+    background-color: #6c757d;
+}
+.carousel-inner .carousel-item img{
+    height: 100%;
+    object-fit: cover;
+}
+@media (max-width: 576px ){
+    .carousel-inner .carousel-item{
+        height: 50vh;
+    }
+    .carousel-inner .carousel-item img{
+        object-position: bottom;
+    }
+}
+/* f */
+footer{
+    background-color:#1f2020
+}
+footer a{
+    color:#ffd901;
+}
+footer a:hover{
+    text-decoration: none;
+}
+footer .social-icon a{
+    font-size: 18px;
+    padding: 7px 12px;
+    background-color:#1f2020 ;
+}
+footer .social-icon a:hover{
+    color:rgb(255, 196, 0);
+    background-color: rgb(75, 69, 61);
+}
+footer .link-copyright{
+animation: change 2s ease-in-out infinite;
+}
+@keyframes change{
+    25%{color: rgb(230, 75, 75);}
+    50%{color: rgb(202, 16, 202);}
+    75%{color: rgb(158, 70, 70);}
+    100%{color: rgb(79, 93, 97);}
+}
